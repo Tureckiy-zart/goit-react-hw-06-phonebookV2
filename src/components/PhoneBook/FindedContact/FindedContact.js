@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { connect, useDispatch } from "react-redux";
+import { connect } from "react-redux";
 
 import ContactList from "../Contacts/ContactList";
 import { onFilterContact, onClearArray } from "../redux/actions/actions";
@@ -24,7 +24,6 @@ class FindedContact extends Component {
     }
     if (prevState.filter === this.state.filter) return;
     this.props.filterContact(filteredClients);
-    // this.setState((state) => ({ ...state, filteredClients }));
   }
 
   userSelector = (clients, filter) => {
@@ -50,7 +49,6 @@ class FindedContact extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  console.log("state", state);
   return {
     clients: state.appReducer,
   };

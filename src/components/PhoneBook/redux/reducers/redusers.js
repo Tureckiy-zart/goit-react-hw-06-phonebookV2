@@ -1,4 +1,4 @@
-export const addContactReduser = (state = [], actions) => {
+// export const addContactReduser = (state = [], actions) => {
     // switch (actions.type) {
     //   case types.ADD_CONTACT:
     //     return [...state, actions.payload];
@@ -23,4 +23,5 @@ export const addContactReduser = (state = [], actions) => {
       // default:
       //   return state;
     // }
-  };
+  // };
+// 

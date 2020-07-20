@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
@@ -47,44 +46,11 @@ const mapStateToProps = (state) => {
   console.log("state", state);
   return {
     clients: state.appReducer,
-    // clients: state.a 
     filter: state.appReducer.filter,
     filteredClients: state.appReducer.filteredClients,
   };
 };
 
-// const mapDispatchToProps = {
 
-// }
 
 export default connect(mapStateToProps)(FindedContact);
-
-// export const FindedContact = ({
-//   onfilterClient,
-//   value,
-//   filteredClients,
-//   onDelComponent,
-// }) => {
-//   // console.log("filteredClients", filteredClients);
-
-//   // filterClient = ({ target: { value } }) => {
-//   //   this.setState({ filter: value });
-//   // };
-
-//   return (
-//     <>
-//       <input
-//         type="text"
-//         onChange={onfilterClient}
-//         placeholder={"Enter name to Saerch..."}
-//         value={value}
-//       />
-//       <div>
-//         <ContactList
-//         // data={{ clients: filteredClients }}
-//         onDelComponent={onDelComponent}
-//         />
-//       </div>
-//     </>
-//   );
-// };

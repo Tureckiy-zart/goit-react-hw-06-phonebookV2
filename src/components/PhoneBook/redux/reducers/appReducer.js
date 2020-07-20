@@ -9,8 +9,6 @@ const initialState = [
 ];
 
 const appReducer = (state = [...initialState], actions) => {
-  // const appReducer = (state = [...initialState], actions) => {
-  // console.log("actionsappReducer", actions);
   switch (actions.type) {
     case types.ADD_CONTACT:
       return [...state, actions.payload.contact];
@@ -27,8 +25,6 @@ const appReducer = (state = [...initialState], actions) => {
 
 //filter
 const filteredReducer = (state = [], actions) => {
-  // console.log("actionfilteredReducer", actions.payload);
-
   switch (actions.type) {
     case types.FILTER_CONTACT:
       console.log("object", actions.payload);
